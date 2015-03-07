@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Offline Survey</string>
+    <string name="hello_world">Hi!</string>
+    <string name="action_settings">Setting</string>
+    <string name="title_activity_survey">Select a survey</string>
+    <string name="title_activity_sub_main">Select a test</string>
+    <string name="title_activity_splash">Hi</string>
+    <string name="btn_back_text">Back</string>
+    <string name="title_activity_sub_sub_main">Select a action</string>
+    <string name="topic_activity_name_survey">Tests</string>
+    <string name="f_error_title">NO !</string>
+    <string name="f_error_not_found">Sorry, we could not found question file</string>
+    <string name="f_survey_start_info_title">SURVEY BEGIN</string>
+    <string name="f_survey_start_info_text_1">There are \u00A0</string>
+    <string name="f_survey_start_info_text_2">\u00A0 questions in this survey.</string>
+    <string name="f_survey_end_button_positive">Yes</string>
+    <string name="f_survey_end_button_negative">No</string>
+    <string name="f_survey_end_button_error">Okay</string>
+    <string name="f_survey_end_alert_title">Your survey result</string>
+    <string name="f_survey_end_alert_true_count">\nTrue count :\u00A0</string>
+    <string name="f_survey_end_alert_false_count">\nFalse count :\u00A0</string>
+    <string name="f_survey_end_alert_empty_count">\nEmpty count :\u00A0</string>
+    <string name="f_survey_info_start_button">Start</string>
+    <string name="f_info_error_title">NO !</string>
+    <string name="f_info_error_answer_not_found">We are sorry about that, try again!</string>
+</resources>

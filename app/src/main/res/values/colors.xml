@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#3F51B5</color>
+    <color name="primaryColorDark">#1A237E</color>
+    <color name="colorAccent">#E8EAF6</color>
+    <color name="f_splash_background">#3F51B5</color>
+    <color name="f_survey_background">#FFFFFF</color>
+    <color name="f_default_text_color">#424048</color>
+    <color name="f_default_rating_color">#ffd700</color>
+
+    <color name="f_progress_menu_background_start">#EFEFEF</color>
+    <color name="f_progress_menu_background_end">#C5CAE9</color>
+    <color name="f_progress_menu_background_center">#FFFFFF</color>
+    <color name="f_progress_menu_freeground_start">#76FF03</color>
+    <color name="f_progress_menu_freeground_end">#8BC34A</color>
+
+    <color name="f_progress_topic_background_start">#EFEFEF</color>
+    <color name="f_progress_topic_background_end">#C5CAE9</color>
+    <color name="f_progress_topic_background_center">#FFFFFF</color>
+    <color name="f_progress_topic_freeground_start">#76FF03</color>
+    <color name="f_progress_topic_freeground_end">#8BC34A</color>
+</resources>

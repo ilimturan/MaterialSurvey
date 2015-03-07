@@ -1,0 +1,179 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="org.ilim.offlinesurvey.SurveyActivity"
+             android:background="@color/f_survey_background"
+             android:id="@+id/as_main_container">
+
+    <FrameLayout android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:paddingLeft="@dimen/activity_horizontal_margin"
+                 android:paddingRight="@dimen/activity_horizontal_margin"
+                 android:paddingTop="@dimen/activity_vertical_margin"
+                 android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/testler_progress_bar"
+            android:progress="1"
+            android:progressDrawable="@drawable/progress_bar_topic"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/f_survey_top_margin"
+        android:layout_marginBottom="@dimen/f_survey_bottom_margin">
+
+        <ScrollView
+            android:id="@+id/testler_parent_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:id="@+id/testler_scrol_view_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_gravity="top">
+
+                <ImageView
+                    android:padding="5dp"
+                    android:id="@+id/testler_img_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerInside"
+                    android:adjustViewBounds="true"
+                    android:transitionName="@string/abc_activity_chooser_view_see_all"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/f_option_bottom_margin"
+        android:gravity="center_vertical|center_horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical|center_horizontal">
+
+
+
+                <ImageButton
+                    android:id="@+id/option_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/option_a"
+                    android:onClick="optionHover"
+                    android:layout_margin="@dimen/f_option_all_margin"/>
+
+
+
+                <ImageButton
+                    android:id="@+id/option_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/f_option_all_margin"
+                    android:background="@drawable/option_b"
+                    android:onClick="optionHover"
+                    />
+
+
+                <ImageButton
+                    android:id="@+id/option_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/f_option_all_margin"
+                    android:background="@drawable/option_c"
+                    android:onClick="optionHover"/>
+
+
+
+                <ImageButton
+                    android:id="@+id/option_d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/f_option_all_margin"
+                    android:background="@drawable/option_d"
+                    android:onClick="optionHover"/>
+
+
+                <ImageButton
+                    android:id="@+id/option_empty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/f_option_all_margin"
+                    android:background="@drawable/option_empty"
+                    android:onClick="optionHover"/>
+            </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_gravity="bottom">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_survey_question_determine"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_answer_b"
+            android:onClick="checkUserAnswer"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_survey_question_confirm"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_answer_o"
+            android:onClick="checkUserAnswer"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_survey_question_next"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_answer_continue"
+            android:onClick="checkUserAnswer"
+            android:clickable="false"/>
+    </RelativeLayout>
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/show_question_result_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        >
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/show_question_result_image"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+
+</FrameLayout>
